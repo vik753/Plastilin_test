@@ -89,17 +89,26 @@ html {
   font-size: 16px;
 }
 .main-wrapper {
+  position: relative;
   max-width: 78.125rem;
   height: 24.0625rem;
   background: url('/img/topBackground.jpg') no-repeat center;
   background-size: cover;
   margin: 0 auto;
+  overflow: hidden;
+}
+.man-wrapper {
+  border: 1px solid red;
+  position: absolute;
+  bottom: 0;
+  left: 22%;
+  width: 415px;
+  height: 461px;
 }
 .svg-icon {
-  fill: #fff;
-}
-#set {
+  fill: #ffff;
   width: 150px;
+  height: 150px;
 }
 /* ==========================================
                  Media - 768px

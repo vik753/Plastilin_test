@@ -20,20 +20,34 @@ html {
 }
 
 .main-wrapper{
+    position: relative;
     .px-to-rem(max-width, 1250);
     .px-to-rem(height, 385);
     background: url('/img/topBackground.jpg') no-repeat center;
     background-size: cover;
     margin: 0 auto;
+    overflow: hidden;
 }  
 
-.svg-icon {
-    fill: #fff;
-    //z-index: 2;
+.man-wrapper{
+    border: 1px solid red;
+    position: absolute;
+    bottom: 0;
+    left: 22%;
+    width: 415px;
+    height: 461px;
 }
 
-#set{
+.manImg{
+    //.px-to-rem(max-width, 701);//511*572
+    //.px-to-rem(height, 695);
+    
+}
+
+.svg-icon {
+    fill: #ffff;
     width: 150px;
+    height: 150px;
 }
 
 /* ==========================================
