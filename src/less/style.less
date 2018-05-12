@@ -1,0 +1,44 @@
+@google-font: 'https://fonts.googleapis.com/css?family=Lato:400,700';
+@import 'reset';
+@import 'mixins';
+
+//=================Fonts===================
+
+@main-font: 'Lato','sans-serif';
+@fontSizeStandard: 16px;
+
+// ================Colors====================
+
+@brown: #a86800;
+
+/* =========================================
+                  my pure and clear code)
+========================================= */
+
+html {
+    font-size: @fontSizeStandard;
+}
+
+.main-wrapper{
+    .px-to-rem(max-width, 1250);
+    .px-to-rem(height, 385);
+    background: url('/img/topBackground.jpg') no-repeat center;
+    background-size: cover;
+    margin: 0 auto;
+}  
+
+.svg-icon {
+    fill: #fff;
+    //z-index: 2;
+}
+
+#set{
+    width: 150px;
+}
+
+/* ==========================================
+                 Media - 768px
+==============================================*/
+@media only screen and (min-width: 768px) {
+    @import "layout768";
+}

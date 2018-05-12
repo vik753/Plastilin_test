@@ -1,0 +1,111 @@
+html,
+body,
+p,
+ol,
+ul,
+li,
+dl,
+dt,
+dd,
+blockquote,
+figure,
+fieldset,
+legend,
+textarea,
+pre,
+iframe,
+hr,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  margin: 0;
+  padding: 0;
+}
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-size: 100%;
+  font-weight: normal;
+}
+ul {
+  list-style: none;
+}
+button,
+input,
+select,
+textarea {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  background: transparent;
+}
+html {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+* {
+  -webkit-font-smoothing: antialiased;
+  -webkit-box-sizing: inherit;
+          box-sizing: inherit;
+}
+*:before,
+*:after {
+  -webkit-box-sizing: inherit;
+          box-sizing: inherit;
+}
+img,
+embed,
+object,
+audio,
+video {
+  height: auto;
+  max-width: 100%;
+}
+iframe {
+  border: 0;
+}
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+tr {
+  vertical-align: top;
+}
+td,
+th {
+  padding: 0;
+  text-align: left;
+}
+/* =========================================
+                  my pure and clear code)
+========================================= */
+html {
+  font-size: 16px;
+}
+.main-wrapper {
+  max-width: 78.125rem;
+  height: 24.0625rem;
+  background: url('/img/topBackground.jpg') no-repeat center;
+  background-size: cover;
+  margin: 0 auto;
+}
+.svg-icon {
+  fill: #fff;
+}
+#set {
+  width: 150px;
+}
+/* ==========================================
+                 Media - 768px
+==============================================*/
+@media only screen and (min-width: 768px) {
+  .main-wrapper {
+    height: 48.3125rem;
+  }
+}
