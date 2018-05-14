@@ -20,7 +20,7 @@ mix.copy('src/*.html', 'docs/')
     //'src/js/smooth-scroll.min.js', //smooth-scroll
     //'src/js/slick.min.js', //for Slick
     //'src/js/isotope.pkgd.min.js', //isotope
-    //'src/js/viewportchecker.js', //viewportchecker
+    'src/js/viewportchecker.js', //viewportchecker
     'src/js/script.js' //my scripts
   ], 'docs/js/script.js')
   //.sass('src/scss/style.scss', 'docs/css/')
