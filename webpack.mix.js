@@ -11,9 +11,9 @@ let mix = require('laravel-mix');
  |
  */
 
-mix.copy('src/*.html', 'dist/')
-  .copyDirectory('src/img', 'dist/img/')
-  //.copyDirectory('src/fonts', 'dist/fonts/')
+mix.copy('src/*.html', 'docs/')
+  .copyDirectory('src/img', 'docs/img/')
+  //.copyDirectory('src/fonts', 'docs/fonts/')
   .babel([ //.scripts ***default without Babel convertation***
     'node_modules/svgxuse/svgxuse.js', //'npm install --save svgxuse'  SVG usage for IE11
     //'src/js/ssm.min.js', //for create breackpoints
@@ -22,18 +22,18 @@ mix.copy('src/*.html', 'dist/')
     //'src/js/isotope.pkgd.min.js', //isotope
     //'src/js/viewportchecker.js', //viewportchecker
     'src/js/script.js' //my scripts
-  ], 'dist/js/script.js')
-  //.sass('src/scss/style.scss', 'dist/css/')
-  .less('src/less/style.less', 'dist/css')
+  ], 'docs/js/script.js')
+  //.sass('src/scss/style.scss', 'docs/css/')
+  .less('src/less/style.less', 'docs/css')
   .browserSync({
     proxy: "",
-    server: "dist",
-    files: ["dist/css/**/*.css", "dist/js/**/*.js", 'dist/*.html']
+    server: "docs",
+    files: ["docs/css/**/*.css", "docs/js/**/*.js", 'docs/*.html']
   })
   .options({
     processCssUrls: false
   })
-  .setPublicPath('dist');
+  .setPublicPath('docs');
 
   // Full API
   // mix.js(src, output);
