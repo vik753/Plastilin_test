@@ -284,11 +284,11 @@
 }(jQuery);
 //# sourceMappingURL=jquery.viewportchecker.min.js.map
 //= =======================Animation========
-console.log('hello');
+//console.log('hello');
 
 jQuery(document).ready(function () {
 
-    //=======mainPage animation===============
+    //=======Animation Viewport-Checker===============
 
     jQuery('.icon-wrapper').addClass("hidden").viewportChecker({
         classToRemove: 'hidden',
