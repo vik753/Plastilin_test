@@ -19,6 +19,7 @@ mix.copy('src/*.html', 'dist/')
     //'src/js/ssm.min.js', //for create breackpoints
     //'src/js/smooth-scroll.min.js', //smooth-scroll
     //'src/js/slick.min.js', //for Slick
+    'src/js/owl.carousel.min.js', //for owl.carousel
     //'src/js/isotope.pkgd.min.js', //isotope
     'src/js/viewportchecker.js', //viewportchecker
     'src/js/script.js' //my scripts

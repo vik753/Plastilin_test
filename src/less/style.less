@@ -1,7 +1,9 @@
 @google-font: 'https://fonts.googleapis.com/css?family=Lato:300,400,700';
-@import 'reset';
+@import 'reset.css';
 @import 'mixins';
-@import '../vendor/animate';
+@import '../vendor/animate.css';
+@import '../vendor/owl.carousel.min.css';
+@import '../vendor/owl.theme.default.min.css';
 //=================Fonts===================
 @main-font: Lato,
 sans-serif;
@@ -10,21 +12,22 @@ sans-serif;
 @brown: #a86800;
 @yellowButton: #ff8800;
 @blueButton: #0073ae;
-
- //==========for Animation================
- .hidden {
+//==========for Animation================
+.hidden {
     opacity: 0;
-  }
-  
-  .visible {
+}
+
+.visible {
     opacity: 1;
-  }
+}
+
 /* =========================================
                   my pure and clear code)
 ========================================= */
 
 html {
     font-size: @fontSizeStandard;
+    font-family: @main-font;
 }
 
 .main-wrapper {
@@ -54,7 +57,6 @@ html {
     font-size: 36px;
     font-weight: 700;
     line-height: 1.056;
-    font-family: @main-font;
 }
 
 .button-wrapper {
@@ -72,21 +74,21 @@ html {
 
 .read-button {
     background: @yellowButton;
-    &:hover{
-        background: darken(@yellowButton,10%);
+    &:hover {
+        background: darken(@yellowButton, 10%);
     }
-    &:active{
-        background: darken(@yellowButton,20%);
+    &:active {
+        background: darken(@yellowButton, 20%);
     }
 }
 
-.view-button{
+.view-button {
     background: @blueButton;
-    &:hover{
-        background: darken(@blueButton,10%);
+    &:hover {
+        background: darken(@blueButton, 10%);
     }
-    &:active{
-        background: darken(@blueButton,20%);
+    &:active {
+        background: darken(@blueButton, 20%);
     }
 }
 
@@ -151,8 +153,7 @@ html {
 .svg-icon {
     fill: #fff;
     width: 60px;
-    height: 60px; 
-    
+    height: 60px;
 }
 
 .icon-wrapperPlay {
@@ -206,8 +207,84 @@ html {
     height: 30px;
 }
 
-.temp {
-    padding-top: 2rem;
+//======slider==============
+.slider-wrapper{
+    display: block;
+}
+
+.owl-carousel {
+    margin: 35px auto 0;
+    width: 95%;
+    max-width: 295px;
+}
+
+.slide-wrapper {
+    max-width: 295px;
+    margin: 0 2px;
+    border: 1px solid #e2e2e2df;
+    border-radius: 4px;
+    text-align: center;
+}
+
+.slide__img-wrapper {
+    background: #f5f5f5;
+}
+
+.slide__button-wrapper {
+    display: flex;
+    justify-content: space-around;
+}
+
+.slide__button {
+    text-decoration: none;
+    text-transform: uppercase;
+    padding: 30px 15px;
+    font-size: 15px;
+    color: #585858;
+    line-height: 1.6;
+    position: relative;
+    &:hover {
+        color: @blueButton;
+    }
+}
+
+.slide__button1::after{
+    position: absolute;
+    content: '';
+    right: 0;
+    top: 25px;
+    height: 30px;
+    width: 1px;
+    background: #e6e6e6;
+}
+
+.blueFont{
+    color: @blueButton;
+}
+
+.slide__text {
+    color: #585858;
+    font-size: 16px;
+    line-height: 1.375;
+    text-align: left;
+    padding: 0 13px 60px;
+}
+
+.slide__text2{
+    display: none;
+}
+
+//==override owl styles====
+.owl-dot {
+    &:focus {
+        outline: none;
+    }
+}
+
+.owl-theme .owl-dots .owl-dot.active span,
+.owl-theme .owl-dots .owl-dot:hover span {
+    background: #fff;
+    border: 2px solid #585858;
 }
 
 /* ==========================================
