@@ -4122,8 +4122,7 @@ html {
 }
 .slide-wrapper {
   max-width: 295px;
-  margin: 0 2px;
-  border: 1px solid #e2e2e2df;
+  border: 1px solid rgba(226, 226, 226, 0.875);
   border-radius: 4px;
   text-align: center;
 }
