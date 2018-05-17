@@ -67,6 +67,122 @@
 }
 
 //================slider=======
-.slider-wrapper{
+.slider-wrapper {
     display: none;
+}
+
+//==============pc-context-wrapper=========
+.pc-context-wrapper {
+    display: block;
+    padding-top: 100px;
+    max-width: 980px;
+    margin: 0 auto;
+}
+
+.pc-context__button-wrapper {
+    flex-basis: 100%;
+    display: flex;
+    justify-content: space-around;
+    position: relative;
+    &::after {
+        position: absolute;
+        content: '';
+        left: 50%;
+        top: 0;
+        height: 60px;
+        width: 1px;
+        background: #e6e6e6;
+    }
+    &::before {
+        position: absolute;
+        content: '';
+        left: 0;
+        top: calc(100% + 20px);
+        height: 1px;
+        width: 100%;
+        background: #e6e6e6;
+    }
+}
+
+.pc-context__button {
+    font-size: 34px;
+    font-family: @main-font;
+    font-weight: 300;
+    text-decoration: none;
+    padding: 10px 0;
+    &:hover {
+        color: @blueButton;
+    }
+}
+
+//=============tabs===========
+
+.pc-context__block {
+    padding-top: 3rem;
+    position: relative;
+}
+
+.pc-context__block1::after{
+        position: absolute;
+        content: '';
+        left: 0;
+        top: calc(100% + 65px);
+        height: 1px;
+        width: 100%;
+        background: #e6e6e6;
+}
+
+.pc-context__block_img-wrapper {
+    padding-top: 50px;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+
+.pc-context__block2-wrapper {
+    padding-top: 60px;
+    display: flex;
+    justify-content: space-around;
+}
+
+.pc-context__text {
+    display: inline-block;
+    max-width: 280px;
+    text-align: center;
+    font-size: 18px;
+    font-weight: 300;
+    color: @greyButton;
+    line-height: 1.278;
+}
+
+.pc-context__img-arrow {
+    align-self: center;
+}
+
+.pc-context__block2 {
+    padding-top: 100px;
+    padding-bottom: 135px;
+}
+
+.pc-context__text_block2{
+    max-width: 355px;
+}
+
+//=========tab2===========
+.pc-context__block_tab2{
+    display: none;
+    padding: 3rem 0 2rem;
+    position: relative;
+}
+
+.advTitle{
+    position: absolute;
+    text-align: center;
+    left: 50%;
+    transform: translateX(-50%);
+    top: 45%;
+    text-transform: uppercase;
+    font-size: 3rem;
+    color: #fff;
+    font-weight: 700;
 }

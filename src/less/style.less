@@ -12,6 +12,7 @@ sans-serif;
 @brown: #a86800;
 @yellowButton: #ff8800;
 @blueButton: #0073ae;
+@greyButton: #585858;
 //==========for Animation================
 .hidden {
     opacity: 0;
@@ -19,6 +20,14 @@ sans-serif;
 
 .visible {
     opacity: 1;
+}
+
+.blueFont{
+    color: @blueButton;
+}
+
+.greyFont{
+    color: @greyButton;
 }
 
 /* =========================================
@@ -42,7 +51,7 @@ html {
 
 .title-wrapper {
     position: absolute;
-    width: fit-content;
+    width: 100%;
     padding: 0 1rem;
     text-align: center;
     max-width: 860px;
@@ -54,7 +63,7 @@ html {
 
 .title {
     color: #fff;
-    font-size: 36px;
+    font-size: 32px;//36 по-умолчанию, но крупновато выходит
     font-weight: 700;
     line-height: 1.056;
 }
@@ -258,10 +267,6 @@ html {
     background: #e6e6e6;
 }
 
-.blueFont{
-    color: @blueButton;
-}
-
 .slide__text {
     color: #585858;
     font-size: 16px;
@@ -285,6 +290,11 @@ html {
 .owl-theme .owl-dots .owl-dot:hover span {
     background: #fff;
     border: 2px solid #585858;
+}
+
+//==============pc-context-wrapper=========
+.pc-context-wrapper{
+    display: none;
 }
 
 /* ==========================================
